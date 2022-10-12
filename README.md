@@ -1,6 +1,6 @@
 # Forecasting Human Trajectory from Scene History
 
-This repository contains the official implementation of our paper: Forecasting Human Trajectory from Scene History. Mancheng Meng, Ziyan Wu, Terrence Chen, Fan Yang, Dinggang Shen. NeurIPS 2022.
+This repository contains the official implementation of our paper: Forecasting Human Trajectory from Scene History. Mancheng Meng, Ziyan Wu, Terrence Chen, Xiran Cai, Xiang Sean Zhou, Fan Yang*, Dinggang Shen. NeurIPS 2022. * Corresponding author.
 
 ![arch](./images/arch.png)
 
@@ -67,6 +67,24 @@ The general structure of the project is as follows.
 ### Usage
 1. train : python train.py --args
 2. test: python test.py  --args
+
+### Results
+
+1. Tested on PAV:
+
+||PETS|ADL|VENICE|AVG|
+|--|--|--|--|--|
+|Ours|34.49/78.40|14.42/38.67|7.76/18.31|18.89/45.13|
+
+2. Tested on ETH/UCY
+
+||ETH|HOTEL|UNIV|ZARA1|ZARA2|AVG|
+|--|--|--|--|--|--|--|
+|Ours|0.41/0.61|0.13/0.20|0.25/0.43|0.21/0.32|0.15/0.26|0.23/0.36|
+
+3. Qualitative Results on PAV
+
+![res](./images/res.png)
 
 ## Acknowledgement
 Thanks for the preprocessed data and code from [ynet](https://github.com/HarshayuGirase/Human-Path-Prediction/tree/master/ynet).
