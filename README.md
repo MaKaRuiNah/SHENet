@@ -90,7 +90,7 @@ The general structure of the project is as follows.
 Thanks for the preprocessed data and code from [ynet](https://github.com/HarshayuGirase/Human-Path-Prediction/tree/master/ynet).
 
 ## Citation
-If intersted, please cite our paper.
+If interested, please cite our paper.
 
 ```
 
