@@ -2,11 +2,10 @@ import cv2
 import numpy as np
 import os
 def video2frames(file_path):
-    # 5400 9010 10520 18380 12060
     # file_list = ["students003.avi","crowds_zara01.avi", "crowds_zara02.avi",  "eth.avi","hotel.avi"]
     file_list = ["hotel.avi"]
     img_list = ["students","zara1", "zara2","eth", "hotel"]
-    img_path = "/home/mancheng/data/eth_ucy/img/"
+    img_path = "/data/eth_ucy/img/"
     for i in range(len(file_list)):
         file_name = file_path+file_list[i]
         cap = cv2.VideoCapture(file_name)
@@ -29,6 +28,6 @@ def video2frames(file_path):
 
 
 if __name__ == '__main__':
-    file_path = "/home/mancheng/data/eth_ucy/data/"
+    file_path = "/data/eth_ucy/data/"
     # crowds_zara01.avi students003.avi crowds_zara01.avi crowds_zara02.avi hotel.avi eth.avi
     video2frames(file_path)
