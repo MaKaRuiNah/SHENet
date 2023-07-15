@@ -177,9 +177,8 @@ class MOT(Dataset):
         sample_num = len(self.data_idx)
         data = self.data
         pred_save = []
-        # lstm/ FFNet/ : ADL/ Venice/PETS
+        
         out_dir = os.path.join(args.model_path,'SHENet/Venice/outputs/')
-
         if not os.path.isdir(out_dir):
             os.makedirs(out_dir)
         output_path = out_dir+"venice.json"
@@ -200,10 +199,9 @@ class MOT(Dataset):
             img_path = data[key]['img_path'][fs[self.in_n-1]]
             # mem_his = memory_his[n]
 
-            pred_root = all_preds[n,:,:2][self.in_n:]    #frames *2
+            pred_root = all_preds[n,:,:2][self.in_n:]
             gt_root = all_gts[n,:,:2]
-            # pred_root = pred_root-pred_root[0,:] + gt_root[self.in_n,:]
-
+            
             seq_idx = self.train_sequences.index(img_path.split("/")[6])
 
             frames_seq[seq_idx].append(output_n)
