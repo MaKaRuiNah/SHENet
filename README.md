@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ### Data Setup
 
 - **PAV** dataset: Download the videos from [MOT15](https://motchallenge.net/data/MOT15/), and preprocess the  data and annotations using the code ./preprocess/mot15_wrapper.py, or you can use our preprocessed data [PAV](https://pan.baidu.com/s/1qXljRC0wKCCpFqeqzEE3AA)(password:7k7k).
-- **ETH/UCY** dataset:  Download the video from [UCY](https://graphics.cs.ucy.ac.cy/research/downloads/crowd-data) and [ETH](https://data.vision.ee.ethz.ch/cvl/aem/ewap_dataset_full.tgz), and convert the raw video to the frames using the code ./preprocess/video2image.py. And we use the preprocesed data from [ynet](https://github.com/HarshayuGirase/Human-Path-Prediction/tree/master/ynet). Since a video from UNIV is not available, we use the fewer frames and provide the changed data [ETH/UCY](https://pan.baidu.com/s/1qXljRC0wKCCpFqeqzEE3AA)(password:7k7k).
+- **ETH/UCY** dataset:  Download the video from [UCY](https://graphics.cs.ucy.ac.cy/research/downloads/crowd-data) and [ETH](https://data.vision.ee.ethz.ch/cvl/aem/ewap_dataset_full.tgz), and convert the raw video to the frames using the code ./preprocess/video2image.py. And we use the preprocesed data from [ynet](https://github.com/HarshayuGirase/Human-Path-Prediction/tree/master/ynet). Since a video from UNIV is not available, we use the fewer frames and provide the changed data [ETH/UCY](https://pan.baidu.com/s/1qXljRC0wKCCpFqeqzEE3AA)(password:7k7k). (Or access by [Google Drive](https://drive.google.com/file/d/1CMMz0hhZ_rfSHkpEbSbMbaGTaG4cW5pJ/view?usp=drive_link))
 
 ### pretrained models
 
